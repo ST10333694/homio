@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Homio" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/homio_purple</item>
+        <item name="colorPrimaryVariant">@color/homio_navy</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/homio_green</item>
+        <item name="android:statusBarColor">@color/homio_navy</item>
+    </style>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="14dp"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/tvPropertyAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:text="Address"/>
+
+    <TextView
+        android:id="@+id/tvPropertyType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/homio_gray"
+        android:text="Type · Rooms"/>
+
+    <TextView
+        android:id="@+id/tvPropertyRent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/homio_purple"
+        android:textStyle="bold"
+        android:text="R0.00 / month"/>
+
+</LinearLayout>

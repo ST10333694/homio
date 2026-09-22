@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/etReportTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Issue Title (e.g. Kitchen Tap Leak)"/>
+
+    <Spinner
+        android:id="@+id/spCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/etReportDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Describe the problem"
+        android:minLines="3"
+        android:gravity="top"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

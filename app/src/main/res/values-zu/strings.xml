@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">Izilungiselelo</string>
+    <string name="hint_full_name">Igama Eliphelele</string>
+    <string name="hint_phone">Inombolo Yocingo</string>
+    <string name="btn_save_changes">Gcina Izinguquko</string>
+    <string name="btn_logout">Phuma</string>
+    <string name="label_language">Ulimi</string>
+    <string name="lang_english">IsiNgisi</string>
+    <string name="lang_zulu">isiZulu</string>
+    <string name="settings_saved">Izilungiselelo zigciniwe</string>
+    <string name="settings_save_failed">Yehlulekile ukugcina</string>
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6FA">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Good morning"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/homio_navy"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here's an overview of your properties"
+                android:textSize="13sp"
+                android:textColor="@color/homio_gray"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Stat cards row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_card"
+                    android:padding="14dp"
+                    android:layout_marginEnd="6dp">
+                    <TextView android:id="@+id/tvPropertiesCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/homio_navy"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Properties" android:textSize="11sp" android:textColor="@color/homio_gray"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_card"
+                    android:padding="14dp"
+                    android:layout_marginHorizontal="6dp">
+                    <TextView android:id="@+id/tvTenantsCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/homio_navy"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tenants" android:textSize="11sp" android:textColor="@color/homio_gray"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_card"
+                    android:padding="14dp"
+                    android:layout_marginStart="6dp">
+                    <TextView android:id="@+id/tvOpenRequestsCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/homio_navy"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open Requests" android:textSize="11sp" android:textColor="@color/homio_gray"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Tenants card -->
+            <LinearLayout
+                android:id="@+id/cardTenants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="14dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tenants"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/homio_navy"/>
+
+                <TextView
+                    android:id="@+id/tvTenantsSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No tenants yet — tap to add one"
+                    android:textColor="@color/homio_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recent Activity"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/homio_navy"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/llRecentActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="14dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No recent activity yet."
+                    android:textColor="@color/homio_gray"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upcoming"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/homio_navy"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/llUpcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="14dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nothing upcoming."
+                    android:textColor="@color/homio_gray"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/nav_bar_landlord" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

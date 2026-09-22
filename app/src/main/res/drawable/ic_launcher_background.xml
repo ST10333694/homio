@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- circle ring -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:pathData="M16,54 a38,38 0 1,0 76,0 a38,38 0 1,0 -76,0" />
+
+    <!-- roof -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,40 L54,22 L74,40 Z" />
+
+    <!-- H monogram -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,40 L46,40 L46,52 L62,52 L62,40 L70,40 L70,74 L62,74 L62,58 L46,58 L46,74 L38,74 Z" />
+</vector>
