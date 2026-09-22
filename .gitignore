@@ -11,3 +11,4 @@
 /app/release
 *.apk
 *.aab
+/app/google-services.json
