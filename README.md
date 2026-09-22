@@ -83,3 +83,5 @@ com.homio.app/
 |-- models/ # Kotlin data classes (Property, Maintenance, Payment, Inspection, Message, User) 
 |--utils/ # Helper modules (SettingsPrefs for themes/language, CloudinaryHelper, Constants)
 |-- views/ # Activity and Fragment UI controllers
+
+link to video : https://www.youtube.com/watch?reload=9&si=O1HTUvxr01-iRAaI&v=J0Oisnt58e8&feature=youtu.be
