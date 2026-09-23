@@ -84,4 +84,15 @@ com.homio.app/
 |--utils/ # Helper modules (SettingsPrefs for themes/language, CloudinaryHelper, Constants)
 |-- views/ # Activity and Fragment UI controllers
 
-link to video : https://www.youtube.com/watch?reload=9&si=O1HTUvxr01-iRAaI&v=J0Oisnt58e8&feature=youtu.be
+link to video : https://www.youtube.com/watch?reload=9&si=O1HTUvxr01-iRAaI&v=J0Oisnt58e8&feature=youtu.be(got removed on youtube)
+
+Video Presentation :
+https://github.com/user-attachments/assets/e21489fe-816b-492b-afaa-a9ab7ed03dbe
+
+
+
+
+
+
+
+
